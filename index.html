@@ -64,6 +64,18 @@
       padding: 3.5rem 1.5rem;
       background: var(--secondary);
       border-bottom: 1px solid var(--accent);
+      animation: hero-enter 450ms ease-out both;
+    }
+
+    @keyframes hero-enter {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .hero p {
@@ -79,6 +91,13 @@
       text-decoration: none;
       font-family: 'Quicksand', sans-serif;
       font-weight: 700;
+      transition: background-color 160ms ease, transform 160ms ease;
+    }
+
+    .hero-button:hover,
+    .hero-button:focus-visible {
+      background: var(--accent);
+      transform: scale(1.03);
     }
 
     .hero-gallery {
@@ -108,6 +127,12 @@
       background: var(--surface);
       border: 1px solid var(--secondary);
       border-radius: 0.5rem;
+      transition: transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .drink-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(58, 42, 42, 0.14);
     }
 
     .drink-card img {
