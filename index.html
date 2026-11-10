@@ -5,14 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pearl Street Boba</title>
   <style>
+    :root {
+      --background: #FFF8F2;
+      --text: #3A2A2A;
+      --primary: #5B8C72;
+      --secondary: #F2B5A7;
+      --accent: #D99A3D;
+      --surface: #FFFDF9;
+    }
+
     body {
       margin: 0;
       padding: 1.5rem;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 1rem;
       line-height: 1.5;
-      color: #3A2A2A;
-      background: #FFF8F2;
+      color: var(--text);
+      background: var(--background);
     }
 
     header {
@@ -22,12 +31,12 @@
       gap: 1rem;
       margin: -1.5rem -1.5rem 0;
       padding: 1rem 1.5rem;
-      background: #fff;
-      border-bottom: 1px solid #F2B5A7;
+      background: var(--surface);
+      border-bottom: 1px solid var(--secondary);
     }
 
     .site-name {
-      color: #5B8C72;
+      color: var(--primary);
       font-weight: bold;
     }
 
@@ -38,7 +47,7 @@
     }
 
     nav a {
-      color: #5B8C72;
+      color: var(--primary);
       text-decoration: none;
       font-size: 0.95rem;
     }
@@ -46,8 +55,8 @@
     .hero {
       margin: -1.5rem -1.5rem 1.75rem;
       padding: 3.5rem 1.5rem;
-      background: #F2B5A7;
-      border-bottom: 1px solid #D99A3D;
+      background: var(--secondary);
+      border-bottom: 1px solid var(--accent);
     }
 
     .hero p {
@@ -57,8 +66,8 @@
     .hero-button {
       display: inline-block;
       padding: 0.65rem 1rem;
-      color: #FFF8F2;
-      background: #5B8C72;
+      color: var(--surface);
+      background: var(--primary);
       border-radius: 0.35rem;
       text-decoration: none;
     }
@@ -87,8 +96,8 @@
 
     .drink-card {
       padding: 1rem;
-      background: #FFF8F2;
-      border: 1px solid #F2B5A7;
+      background: var(--surface);
+      border: 1px solid var(--secondary);
       border-radius: 0.5rem;
     }
 
@@ -146,9 +155,9 @@
     footer {
       margin: 2.5rem -1.5rem -1.5rem;
       padding: 1.5rem;
-      color: #FFF8F2;
-      background: #5B8C72;
-      border-top: 3px solid #D99A3D;
+      color: var(--surface);
+      background: var(--primary);
+      border-top: 3px solid var(--accent);
     }
 
     footer p {
@@ -158,6 +167,17 @@
     footer p:last-child {
       margin-bottom: 0;
       font-size: 0.9rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.15rem 0.45rem;
+      color: var(--text);
+      background: var(--accent);
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: normal;
+      vertical-align: middle;
     }
 
     h1 {
@@ -210,7 +230,7 @@
   <p>Owner: Kai</p>
 
   <section aria-labelledby="featured-drinks-title">
-    <h2 id="featured-drinks-title">Featured Drinks</h2>
+    <h2 id="featured-drinks-title">Featured Drinks <span class="badge">Popular picks</span></h2>
     <div class="drink-cards">
       <article class="drink-card">
         <img src="images/milk-tea.jpg" alt="Classic milk tea with boba">
