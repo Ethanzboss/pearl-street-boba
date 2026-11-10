@@ -6,6 +6,7 @@
   <title>Pearl Street Boba</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.cdnfonts.com/css/redaction');
 
     :root {
       --background: #FFF8F2;
@@ -182,6 +183,11 @@
       vertical-align: middle;
     }
 
+    .price {
+      font-family: 'Redaction 10', serif;
+      font-weight: 700;
+    }
+
     h1 {
       margin: 0 0 0.35rem;
       font-size: 2rem;
@@ -237,17 +243,17 @@
       <article class="drink-card">
         <img src="images/milk-tea.jpg" alt="Classic milk tea with boba">
         <h3>Classic Milk Tea</h3>
-        <p>Rich black tea, creamy milk, and soft boba pearls. $5.50</p>
+        <p>Rich black tea, creamy milk, and soft boba pearls. <span class="price">$5.50</span></p>
       </article>
       <article class="drink-card">
         <img src="images/brown-sugar.jpg" alt="Brown sugar milk tea">
         <h3>Brown Sugar Milk Tea</h3>
-        <p>Velvety milk tea with caramelized brown sugar pearls. $6.00</p>
+        <p>Velvety milk tea with caramelized brown sugar pearls. <span class="price">$6.00</span></p>
       </article>
       <article class="drink-card">
         <img src="images/strawberry.jpg" alt="Strawberry fruit tea">
         <h3>Strawberry Fruit Tea</h3>
-        <p>Bright strawberry flavor blended with refreshing green tea. $5.50</p>
+        <p>Bright strawberry flavor blended with refreshing green tea. <span class="price">$5.50</span></p>
       </article>
     </div>
   </section>
@@ -277,25 +283,25 @@
   <h2 id="menu">Menu</h2>
   <p>Drinks:</p>
   <ul>
-    <li>Classic Milk Tea with Boba - $5.50</li>
-    <li>Brown Sugar Milk Tea - $6.00</li>
-    <li>Taro Milk Tea - $6.00</li>
-    <li>Matcha Latte with Boba - $6.25</li>
-    <li>Thai Tea - $5.75</li>
-    <li>Mango Green Tea - $5.50</li>
-    <li>Strawberry Fruit Tea - $5.50</li>
-    <li>Honey Lemon Green Tea - $5.25</li>
-    <li>Wintermelon Tea - $5.00</li>
-    <li>Oolong Milk Tea - $5.75</li>
+    <li>Classic Milk Tea with Boba - <span class="price">$5.50</span></li>
+    <li>Brown Sugar Milk Tea - <span class="price">$6.00</span></li>
+    <li>Taro Milk Tea - <span class="price">$6.00</span></li>
+    <li>Matcha Latte with Boba - <span class="price">$6.25</span></li>
+    <li>Thai Tea - <span class="price">$5.75</span></li>
+    <li>Mango Green Tea - <span class="price">$5.50</span></li>
+    <li>Strawberry Fruit Tea - <span class="price">$5.50</span></li>
+    <li>Honey Lemon Green Tea - <span class="price">$5.25</span></li>
+    <li>Wintermelon Tea - <span class="price">$5.00</span></li>
+    <li>Oolong Milk Tea - <span class="price">$5.75</span></li>
   </ul>
 
   <p>Toppings:</p>
   <ul>
-    <li>Classic boba pearls - +$0.75</li>
-    <li>Brown sugar pearls - +$1.00</li>
-    <li>Lychee jelly - +$0.75</li>
-    <li>Aloe jelly - +$0.75</li>
-    <li>Pudding - +$0.75</li>
+    <li>Classic boba pearls - <span class="price">+$0.75</span></li>
+    <li>Brown sugar pearls - <span class="price">+$1.00</span></li>
+    <li>Lychee jelly - <span class="price">+$0.75</span></li>
+    <li>Aloe jelly - <span class="price">+$0.75</span></li>
+    <li>Pudding - <span class="price">+$0.75</span></li>
   </ul>
 
   <p>Sweetness: 0%, 30%, 50%, 70%, or 100%</p>
