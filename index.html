@@ -7,6 +7,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
     @import url('https://fonts.cdnfonts.com/css/redaction');
 
     :root {
@@ -193,6 +194,10 @@
       font-family: 'Playfair Display', serif;
     }
 
+    .menu-section {
+      font-family: 'Libre Baskerville', serif;
+    }
+
     h1 {
       margin: 0 0 0.35rem;
       font-size: 2rem;
@@ -285,7 +290,8 @@
   <h2 id="about">About</h2>
   <p>Small boba shop on Pearl Street and 4th. Fresh tea. Soft pearls. Fast orders.</p>
 
-  <h2 id="menu">Menu</h2>
+  <section id="menu" class="menu-section" aria-labelledby="menu-title">
+  <h2 id="menu-title">Menu</h2>
   <p>Drinks:</p>
   <ul>
     <li>Classic Milk Tea with Boba - <span class="price">$5.50</span></li>
@@ -311,6 +317,7 @@
 
   <p>Sweetness: 0%, 30%, 50%, 70%, or 100%</p>
   <p>Ice: Extra ice, regular ice, or less ice</p>
+  </section>
 
   <h2 id="hours">Hours</h2>
   <p>Mon-Wed: 11:00 AM - 8:00 PM</p>
