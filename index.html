@@ -104,13 +104,19 @@
       font-family: 'Quicksand', sans-serif;
       font-weight: 700;
       font-size: 1.05rem;
-      transition: background-color 160ms ease, transform 160ms ease;
+      transition: background-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
     }
 
     .hero-button:hover,
     .hero-button:focus-visible {
       background: var(--accent);
-      transform: scale(1.03);
+      transform: translateY(-4px) scale(1.08);
+      box-shadow: 0 8px 16px rgba(58, 42, 42, 0.22);
+    }
+
+    .hero-button:active {
+      transform: translateY(-1px) scale(1.03);
+      box-shadow: 0 3px 7px rgba(58, 42, 42, 0.18);
     }
 
     .hero-gallery {
